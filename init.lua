@@ -9,6 +9,7 @@ vim.g.have_nerd_font = true
 
 require 'options'
 require 'keymaps'
+require 'filetype'
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -60,6 +61,8 @@ require('lazy').setup({
   require 'plugins.tokyonight',
   require 'plugins.mini',
   require 'plugins.nvim-treesitter',
+  require 'plugins.which-key',
+  require 'plugins.nvim-tree',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
@@ -81,6 +84,3 @@ require('lazy').setup({
     },
   },
 })
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
